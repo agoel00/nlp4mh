@@ -1,0 +1,50 @@
+---
+import { Icon } from 'astro-icon'
+
+const { src = '/astronaut-hero-img.webp' } = Astro.props
+---
+
+<section class="hero my-24">
+  <div class="container">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-1">
+      <div class="flex flex-col items-center gap-8 md:items-start">
+        <h1 class="text-center text-6xl md:text-left lg:text-8xl">
+          <slot>NLP for <span class="text-gradient">Mental Health</span></slot>
+        </h1>
+        <p class="text-3xl font-medium text-gray-900 dark:text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Arcu risus quis varius quam quisque. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Feugiat scelerisque varius morbi enim nunc. Amet nulla facilisi <span class="font-semibold text-gray-900 underline dark:text-white decoration-green-500">software development</span> tempus iaculis. 
+        </p>
+        <!-- <div class="flex justify-center flex-col gap-3 min-[500px]:flex-row">
+          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
+            <Icon pack="mdi" name="home" />
+            UKP
+          </a>
+          <a
+            class="button has-icon color-secondary"
+            href="https://github.com/markteekman/accessible-astro-starter/blob/main/README.md"
+          >
+            <Icon pack="mdi" name="university" />
+            TU Darmstadt
+          </a>
+        </div> -->
+      </div>
+      <!-- <img class="hidden lg:block" src={src} alt="" decoding="async" /> -->
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .text-gradient {
+    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-500));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  :global(.darkmode .text-gradient) {
+    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-400));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
