@@ -6,22 +6,23 @@ import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 import { Accordion, AccordionItem } from 'accessible-astro-components'
 import { Card } from 'accessible-astro-components'
+import Member from '../components/Member.astro'
 ---
 
 <DefaultLayout title="Home">
   <Hero />
   <section class="my-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Areas</h2>
+      <h2 class="mb-16 text-4xl">Areas</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:tailwind" title="Synthetic Data">
-          Use the power of Tailwind to greatly improve your productivity and enhance your developer workflow.
+        <Feature icon="mdi:content-copy" title="Synthetic Data">
+          To alleviate privcy issues of high-quality healthcare data, we develop techniques for synthetic data generation and evaluation.
         </Feature>
-        <Feature icon="mdi:wheelchair-accessibility" title="Privacy">
-          17 components and counting, all tried and tested for the most optimal accessible experience for your visitors.
+        <Feature icon="mdi:lock-off" title="Privacy">
+          To protect the privacy of patients and hospital data, we investigate cutting edge solutions for privacy in NLP and allied areas like federated learning.
         </Feature>
-        <Feature icon="mdi:looks" title="Multimodality">
-          Less worry about formatting your code, let the Astro Prettier integration do the heavy lifting.
+        <Feature icon="mdi:video-wireless" title="Multimodality">
+          Healthcare data is available in multiple modalities - text, audio, video, tabular, etc. We develop methods to integrate different modalities in our solutions.
         </Feature>
         <!-- <Feature icon="mdi:eslint" title="ESLint">
           Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
@@ -47,23 +48,18 @@ import { Card } from 'accessible-astro-components'
 
   <section class="mb-12 mt-32">
     <div class="container">
-      <div class="grid grid-cols-1 gap-32 md:grid-cols-1">
+      <div class="grid grid-cols-2 gap-32 md:grid-cols-1">
         <div class="space-content">
-          <h2 class="mb-16 text-6xl">News</h2>
+          <h2 class="mb-16 text-4xl">News</h2>
           <Accordion>
-            <AccordionItem header="First Item">
+            <AccordionItem header="EMNLP 2023">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
-                accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
-                veritatis laboriosam est tenetur.
+                Our paper <b>Semantic Similarity Models for Depression Severity Estimation</b> was accepted at EMNLP 2023! See <a href="/publications">publications</a> for more info!
               </p>
-              <a href="#">Tab to me!</a>
             </AccordionItem>
-            <AccordionItem header="Second Item">
+            <AccordionItem header="NeurIPS 2022 Workshop">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quasi nobis optio? Qui in quo
-                accusantium debitis sapiente obcaecati magnam incidunt sit. Molestiae exercitationem quibusdam quod
-                veritatis laboriosam est tenetur.
+                Two papers accepted at the PAI4MH workshop at NeurIPS 2022. See <a href="/publications">publications</a> for more info!
               </p>
             </AccordionItem>
           </Accordion>
@@ -73,24 +69,38 @@ import { Card } from 'accessible-astro-components'
 
   <section class="mb-12 mt-32">
     <div class="container">
-      <div class="grid grid-cols-1 gap-32 md:grid-cols-1">
+      <h2 class="mb-16 text-4xl">Team</h2>
+      <div class="grid grid-cols-2 gap-32 md:grid-cols-1">
+      <!-- <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3"> -->
         <div class="space-content">
-          <h2 class="mb-16 text-6xl">Team</h2>
-          <ul>
-            <li>
-              <Card
-                url="/link-to-my-post"
-                img="/assets/post-cover.jpg"
-                title="My Awesome Post"
-                footer="Tony Stark"
-              >
-                Lorem ipsum dolor sit amet.
-              </Card>
-            </li>
-            <li>
-              <!-- ... -->
-            </li>
-          </ul>
+            <Member
+            name="Iryna Gurevych"
+            designation="Principal Investigator"
+            url="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp"
+            img="https://www.informatik.tu-darmstadt.de/media/ukp/pictures_1/people_1/Gurevych_Iryna_500x750_415x415.jpg"
+            >
+            </Member>
+            <Member
+            name="Hiba Arnout"
+            designation="Postdoc"
+            url="https://hibaarnaout.com/"
+            img="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=sy1z_I4AAAAJ&citpid=13"
+            >
+            </Member>
+            <Member
+            name="Anmol Goel"
+            designation="PhD Student"
+            url="https://goel.ai"
+            img="https://www.informatik.tu-darmstadt.de/media/ukp/pictures_1/people_1/PXL_20230909_100029664.PORTRAIT11_415x415.jpg"
+            >
+            </Member>
+            <Member
+            name="Aishik Mandal"
+            designation="PhD Student"
+            url="https://jitaishik.github.io/"
+            img="https://www.informatik.tu-darmstadt.de/media/ukp/pictures_1/people_1/PP_AISHIK_12092022_1_415x0.jpg"
+            >
+            </Member>
         </div>
   </section>
   <!-- <ContentMedia imgSrc="/accessible-components.webp">
@@ -112,7 +122,7 @@ import { Card } from 'accessible-astro-components'
   </ContentMedia> -->
   <section class="mt-64 mb-32">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Collaborations</h2>
+      <h2 class="mb-16 text-4xl">Collaborations</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
         <Counter logo="https://israelxp.com/wp-content/uploads/2020/11/logo-bar-ilan-university.png" />
         <!-- <Counter count="17" title="Accessible" sub="Components" /> -->
