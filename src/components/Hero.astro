@@ -1,12 +1,12 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { src = '/astronaut-hero-img.webp' } = Astro.props
+const { src = '/nlp4mh-logo.png' } = Astro.props
 ---
 
 <section class="hero my-24">
   <div class="container">
-    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-1">
+    <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
           <slot>NLP for <span class="text-gradient">Mental Health</span></slot>
@@ -28,7 +28,7 @@ const { src = '/astronaut-hero-img.webp' } = Astro.props
           </a>
         </div> -->
       </div>
-      <!-- <img class="hidden lg:block" src={src} alt="" decoding="async" /> -->
+      <img class="hidden lg:block" src={src} alt="" decoding="async" />
     </div>
   </div>
 </section>
