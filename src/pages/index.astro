@@ -48,10 +48,10 @@ import Member from '../components/Member.astro'
 
   <section class="mb-12 mt-32">
     <div class="container">
-      <div class="grid grid-cols-2 gap-32 md:grid-cols-1">
+      <!-- <div class="grid grid-cols-1 gap-32 md:grid-cols-2"> -->
         <div class="space-content">
           <h2 class="mb-16 text-4xl">News</h2>
-          <Accordion>
+          <!-- <Accordion>
             <AccordionItem header="EMNLP 2023">
               <p>
                 Our paper <b>Semantic Similarity Models for Depression Severity Estimation</b> was accepted at EMNLP 2023! See <a href="/publications">publications</a> for more info!
@@ -62,7 +62,16 @@ import Member from '../components/Member.astro'
                 Two papers accepted at the PAI4MH workshop at NeurIPS 2022. See <a href="/publications">publications</a> for more info!
               </p>
             </AccordionItem>
-          </Accordion>
+          </Accordion> -->
+          <div class="p-4 text-base text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300" role="alert">
+            Our paper <em>Semantic Similarity Models for Depression Severity Estimation</em> was accepted at EMNLP 2023! See <a href="/publications">publications</a> for more info!
+          </div>
+          <div class="p-4 text-base text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300" role="alert">
+            Two papers accepted at the PAI4MH workshop at NeurIPS 2022. See <a href="/publications">publications</a> for more info!
+          </div>
+          
+
+        </div>
         </div>
   </section>
 
@@ -70,9 +79,8 @@ import Member from '../components/Member.astro'
   <section class="mb-12 mt-32">
     <div class="container">
       <h2 class="mb-16 text-4xl">Team</h2>
-      <div class="grid grid-cols-2 gap-32 md:grid-cols-1">
-      <!-- <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3"> -->
-        <div class="space-content">
+      <!-- <div class="grid grid-cols-2 gap-32 md:grid-cols-1"> -->
+        <!-- <div class="space-content">
             <Member
             name="Iryna Gurevych"
             designation="Principal Investigator"
@@ -100,8 +108,53 @@ import Member from '../components/Member.astro'
             url="https://jitaishik.github.io/"
             img="https://www.informatik.tu-darmstadt.de/media/ukp/pictures_1/people_1/PP_AISHIK_12092022_1_415x0.jpg"
             >
-            </Member>
+            </Member> -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/ig.jpg" alt="Bonnie image"/>
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Iryna Gurevych</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Principal Investigator</span>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/ha.jpeg" alt="Bonnie image"/>
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Hiba Arnaout</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Postdoc</span>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/ag.jpg" alt="Bonnie image"/>
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Anmol Goel</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">PhD Student</span>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/am.jpg" alt="Bonnie image"/>
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Aishik Mandal</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">PhD Student</span>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/tm.jpeg" alt="Bonnie image"/>
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Tobias Mayer</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Former Postdoc</span>
+            </div>
+          </div>
+          <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="/nw.jpeg" alt="Bonnie image"/>
+                <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white">Neha Warikoo</h5>
+                <span class="text-sm text-gray-500 dark:text-gray-400">Former Postdoc</span>
+            </div>
+          </div>
+
         </div>
+    </div>
   </section>
   <!-- <ContentMedia imgSrc="/accessible-components.webp">
     <h2>Accessible Components</h2>
@@ -124,12 +177,34 @@ import Member from '../components/Member.astro'
     <div class="container">
       <h2 class="mb-16 text-4xl">Collaborations</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter logo="https://israelxp.com/wp-content/uploads/2020/11/logo-bar-ilan-university.png" />
+        <Counter logo="/logo-bar-ilan-university.png" />
         <!-- <Counter count="17" title="Accessible" sub="Components" /> -->
-        <Counter logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Logo-Goethe-University-Frankfurt-am-Main.svg/1920px-Logo-Goethe-University-Frankfurt-am-Main.svg.png" />
-        <Counter logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/UT_Hortz.svg/1920px-UT_Hortz.svg.png"/>
-        <Counter logo="https://upload.wikimedia.org/wikipedia/en/9/9a/Max_Planck_Society_logo.svg"/>
+        <Counter logo="/1920px-Logo-Goethe-University-Frankfurt-am-Main.svg.png" />
+        <Counter logo="/UT_Hortz.svg.png"/>
+        <Counter logo="/Max_Planck_Society_logo.svg"/>
       </div>
     </div>
   </section>
+
+
+  <section class="mt-64 mb-32">
+    <div class="container">
+      <h2 class="mb-16 text-4xl">Collaborations</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <img class="h-32 max-w-full rounded-lg object-scale-down" src="/erc.png" alt="">
+        </div>
+        <div>
+            <img class="h-24 max-w-full rounded-lg object-scale-down" src="/loewe.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-24 max-w-full rounded-lg object-scale-down" src="/Logo_of_ATHENE.png" alt="">
+        </div>
+
+    </div>
+    
+
+    </div>
+  </section>
+
 </DefaultLayout>
