@@ -7,10 +7,7 @@ import Footer from '../components/Footer.astro'
 
 const {
   title = 'NLP for Mental Health | UKP',
-  description = 'A starter project with accessibility features using Astro static site builder. Contains accessible landmarks, skip links, a dark mode color scheme, better focus outline and keyboard menu navigation.',
-  url,
-  image = '/social-preview-image.png',
-  author = 'Mark Teekman',
+  description = 'NLP for Mental Health group at UKP Lab, TU Darmstadt.',
 } = Astro.props
 ---
 
@@ -21,16 +18,11 @@ const {
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/fav.ico" />
 
     <SiteMeta
       title={title}
       description={description.substring(0, 100)}
-      url={Astro.site
-        ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(' ', '-')}`}
-      image={image}
-      author={author}
     />
   </head>
   <body>

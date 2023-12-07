@@ -11,61 +11,10 @@ import Member from '../components/Member.astro'
 
 <DefaultLayout title="Home">
   <Hero />
-  <section class="my-64">
+  <section class="mb-16 mt-16">
     <div class="container">
-      <h2 class="mb-16 text-4xl">Areas</h2>
-      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-        <Feature icon="mdi:content-copy" title="Clinical Applications">
-          <!-- To alleviate privacy issues of high-quality healthcare data, we develop techniques for synthetic data generation and evaluation. -->
-          NLP in mental health offers clinical advancements through efficient analysis of patient narratives, aiding diagnostics and treatment and improving patient-centered care. We emphasize ethical considerations and data security for responsible deployment in clinical settings.
-        </Feature>
-        <Feature icon="mdi:lock-off" title="Privacy & Synthetic Data">
-          <!-- To protect the privacy of patients and hospital data, we investigate cutting edge solutions for privacy in NLP and allied areas like federated learning. -->
-           Develop NLP models capable of operating on decentralized, synthetic datasets and incorporate differential privacy to ensure individual privacy while maintaining the integrity of mental health research and applications.
-        </Feature>
-        <Feature icon="mdi:video-wireless" title="Multimodality">
-          <!-- Healthcare data is available in multiple modalities - text, audio, video, tabular, etc. We develop methods to integrate different modalities in our solutions. -->
-          Explore how combining textual information with visual and auditory cues can provide a more comprehensive understanding of users' mental states. Develop and assess multimodal models that leverage NLP techniques for a holistic approach to mental health assessment and intervention.
-        </Feature>
-        <!-- <Feature icon="mdi:eslint" title="ESLint">
-          Lint your code with strict a11y settings to ensure you stay on track with the WCAG standards.
-        </Feature>
-        <Feature icon="mdi:book-open-page-variant" title="Blog">
-          This theme comes with a fully integrated blog, dynamic pages and SEO optimization.
-        </Feature>
-        <Feature icon="mdi:language-markdown" title="Markdown & MDX">
-          Easily use .md and .mdx pages to build your websites or use it with Netlify CMS.
-        </Feature>
-        <Feature icon="mdi:theme-light-dark" title="Dark mode">
-          Fully integrated Dark mode gives your users the choice for their favorite viewing mode.
-        </Feature>
-        <Feature icon="mdi:cog" title="Design System">
-          The theme offers some very handy utilities to help you build your website faster.
-        </Feature>
-        <Feature icon="mdi:lighthouse" title="Lighthouse Scores">
-          Excellent lighthouse scores means your website will load faster and get better SEO rankings.
-        </Feature> -->
-      </div>
-    </div>
-  </section>
-
-  <section class="mb-12 mt-32">
-    <div class="container">
-      <!-- <div class="grid grid-cols-1 gap-32 md:grid-cols-2"> -->
         <div class="space-content">
-          <h2 class="mb-16 text-4xl">News</h2>
-          <!-- <Accordion>
-            <AccordionItem header="EMNLP 2023">
-              <p>
-                Our paper <b>Semantic Similarity Models for Depression Severity Estimation</b> was accepted at EMNLP 2023! See <a href="/publications">publications</a> for more info!
-              </p>
-            </AccordionItem>
-            <AccordionItem header="NeurIPS 2022 Workshop">
-              <p>
-                Two papers accepted at the PAI4MH workshop at NeurIPS 2022. See <a href="/publications">publications</a> for more info!
-              </p>
-            </AccordionItem>
-          </Accordion> -->
+          <h2 class="mb-16 text-5xl text-center">News</h2>
           <div class="p-4 text-base text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300" role="alert">
             Our paper <em>Semantic Similarity Models for Depression Severity Estimation</em> was accepted at EMNLP 2023! See <a href="/publications">publications</a> for more info!
           </div>
@@ -77,41 +26,28 @@ import Member from '../components/Member.astro'
         </div>
         </div>
   </section>
-
-
-  <section class="mb-12 mt-32">
+  
+  <section class="mt-16 mb-16">
     <div class="container">
-      <h2 class="mb-16 text-4xl">Team</h2>
-      <!-- <div class="grid grid-cols-2 gap-32 md:grid-cols-1"> -->
-        <!-- <div class="space-content">
-            <Member
-            name="Iryna Gurevych"
-            designation="Principal Investigator"
-            url="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp"
-            img="https://www.informatik.tu-darmstadt.de/media/ukp/pictures_1/people_1/Gurevych_Iryna_500x750_415x415.jpg"
-            >
-            </Member>
-            <Member
-            name="Hiba Arnout"
-            designation="Postdoc"
-            url="https://hibaarnaout.com/"
-            img="https://scholar.googleusercontent.com/citations?view_op=view_photo&user=sy1z_I4AAAAJ&citpid=13"
-            >
-            </Member>
-            <Member
-            name="Anmol Goel"
-            designation="PhD Student"
-            url="https://goel.ai"
-            img="https://www.informatik.tu-darmstadt.de/media/ukp/pictures_1/people_1/PXL_20230909_100029664.PORTRAIT11_415x415.jpg"
-            >
-            </Member>
-            <Member
-            name="Aishik Mandal"
-            designation="PhD Student"
-            url="https://jitaishik.github.io/"
-            img="https://www.informatik.tu-darmstadt.de/media/ukp/pictures_1/people_1/PP_AISHIK_12092022_1_415x0.jpg"
-            >
-            </Member> -->
+      <h2 class="mb-16 text-5xl text-center">Areas</h2>
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="mdi:content-copy" title="Clinical Applications">
+          NLP in mental health offers clinical advancements through efficient analysis of patient narratives, aiding diagnostics and treatment and improving patient-centered care. We emphasize ethical considerations and data security for responsible deployment in clinical settings.
+        </Feature>
+        <Feature icon="mdi:lock-off" title="Privacy & Synthetic Data">
+           Develop NLP models capable of operating on decentralized, synthetic datasets and incorporate differential privacy to ensure individual privacy while maintaining the integrity of mental health research and applications.
+        </Feature>
+        <Feature icon="mdi:video-wireless" title="Multimodality">
+          Explore how combining textual information with visual and auditory cues can provide a more comprehensive understanding of users' mental states. Develop and assess multimodal models that leverage NLP techniques for a holistic approach to mental health assessment and intervention.
+        </Feature>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="mb-16 mt-16">
+    <div class="container">
+      <h2 class="mb-16 text-5xl text-center">Team</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div class="flex flex-col items-center pb-10">
@@ -159,29 +95,12 @@ import Member from '../components/Member.astro'
         </div>
     </div>
   </section>
-  <!-- <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
-    <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
-    </p>
-  </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia> -->
-  <section class="mt-64 mb-32">
+
+  <section class="mt-16 mb-16">
     <div class="container">
-      <h2 class="mb-16 text-4xl">Collaborations</h2>
+      <h2 class="mb-16 text-5xl text-center">Collaborations</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
         <Counter logo="/logo-bar-ilan-university.png" />
-        <!-- <Counter count="17" title="Accessible" sub="Components" /> -->
         <Counter logo="/1920px-Logo-Goethe-University-Frankfurt-am-Main.svg.png" />
         <Counter logo="/UT_Hortz.svg.png"/>
         <Counter logo="/Max_Planck_Society_logo.svg"/>
@@ -190,18 +109,24 @@ import Member from '../components/Member.astro'
   </section>
 
 
-  <section class="mt-64 mb-32">
+  <section class="mt-16 mb-16">
     <div class="container">
-      <h2 class="mb-16 text-4xl">Funding</h2>
+      <h2 class="mb-16 text-5xl text-center">Funding</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
         <div>
+            <a href="https://intertext.ukp-lab.de/">
             <img class="h-32 max-w-full rounded-lg object-scale-down" src="/erc.png" alt="">
+            </a>
         </div>
         <div>
+            <a href="https://www.tu-darmstadt.de/forschen/exzellente_forschung/news_details_de_en_414208.en.jsp">
             <img class="h-24 max-w-full rounded-lg object-scale-down" src="/loewe.jpg" alt="">
+            </a>
         </div>
         <div>
+            <a href="https://gu.athene-center.de/projekte/privacy-aware-domain-adaptive-medical-nlp">
             <img class="h-24 max-w-full rounded-lg object-scale-down" src="/Logo_of_ATHENE.png" alt="">
+            </a>
         </div>
 
     </div>
