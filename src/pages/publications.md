@@ -5,6 +5,11 @@ title: Publicatons
 
 # Publications
 ## NLP for Mental Health
+### 2024
+---
+- **Predicting Client Emotions and Therapist Interventions in Psychotherapy Dialogues**
+- `Tobias Mayer, Neha Warikoo, Amir Eliassaf, Dana Atzil-Slonim, Iryna Gurevych`
+- EACL 2024
 ### 2023
 ---
 - **Semantic Similarity Models for Depression Severity Estimation**
